@@ -52,6 +52,8 @@ void loop() {
 
   // - Change states
   if(buttonPress && state == pause_state) {
+    //initial sleep and then start
+    sleep(5000); 
     state = run_state;
   }
   else if(buttonPress && state == run_state) {
