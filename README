@@ -1,0 +1,10 @@
+# Introduction
+
+# Layout
+Each robot platform has its own source directory, and for each of those different programs will exist.  This is so that different strategies can be tested and loaded as needed for comparison or testing one against another.
+ 
+ * zumo is for the Pololu Zumo 32u4 platform.
+
+# Resources
+This is a collection of resources related to robot sumo as I start learning about it.
+* http://www.robotroom.com/SumoRules.html
