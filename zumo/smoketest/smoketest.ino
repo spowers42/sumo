@@ -14,7 +14,8 @@
 
 enum State {
   pause_state,
-  run_state
+  starting_state, 
+  run_state,
 };
 
 
@@ -53,7 +54,11 @@ void loop() {
   // - Change states
   if(buttonPress && state == pause_state) {
     //initial sleep and then start
-    sleep(5000); 
+    state = starting_state;
+    lcd.gotoXY(5, 1);
+    lcd.print(state);
+    lcd.print("  ");
+    delay(5000); 
     state = run_state;
   }
   else if(buttonPress && state == run_state) {
